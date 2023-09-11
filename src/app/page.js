@@ -19,6 +19,7 @@ export default function Home() {
       <h1>Home Page {name}</h1>
       <button onClick={()=>apple()}>Click Me</button>
       <InnerComp></InnerComp>
+      {InnerComp()}
     </main>
   )
 }
