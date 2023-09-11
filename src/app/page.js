@@ -7,10 +7,18 @@ export default function Home() {
   const apple=() => {
     setName("Nexjs");
   }
+
+  const InnerComp=()=> {
+    return(
+      <h1>Inner Component</h1>
+    )
+  }
+
   return (
     <main className={styles.main}>
       <h1>Home Page {name}</h1>
       <button onClick={()=>apple()}>Click Me</button>
+      <InnerComp></InnerComp>
     </main>
   )
 }
