@@ -1,25 +1,16 @@
 'use client'
 import { useState } from 'react';
+import Link from 'next/link';
 import styles from './page.module.css'
 
 export default function Home() {
-  const [name, setName] = useState("Swarup");
-  const apple=() => {
-    setName("Nexjs");
-  }
-
-  const InnerComp=()=> {
-    return(
-      <h1>Inner Component</h1>
-    )
-  }
 
   return (
-    <main className={styles.main}>
-      <h1>Home Page {name}</h1>
-      <button onClick={()=>apple()}>Click Me</button>
-      <InnerComp></InnerComp>
-      {InnerComp()}
+    <main>
+      <h1>Basic Routing | Make New Page</h1>
+      <Link href="/login">Go to Login Page</Link>
+      <br></br>
+      <Link href="/about">Go to About Page</Link>
     </main>
   )
 }
