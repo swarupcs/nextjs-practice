@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Basic Routing | Make New Page</h1>
+      {/* <h1>Basic Routing | Make New Page</h1>
       <Link href="/login">Go to Login Page</Link>
       <br></br>
       <Link href="/about">Go to About Page</Link>
@@ -20,7 +20,10 @@ export default function Home() {
       <br />
       <br />
       <button onClick={()=> navigate("/login")} >Go to Login Page</button>
-      <button onClick={()=> navigate("/about")} >Go to About Page</button>
+      <button onClick={()=> navigate("/about")} >Go to About Page</button> */}
+
+      <h1>Fetch Data with API in Client Component</h1>
+      <Link href="/productlist">Go to Product List</Link>
     </main>
   )
 }
